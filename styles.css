@@ -1,0 +1,147 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    color: #667eea;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #667eea;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+section {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    color: #667eea;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+section p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Button Styles */
+button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 1rem 0;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+#output {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #f0f0f0;
+    border-radius: 5px;
+    min-height: 50px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    section {
+        padding: 1.5rem;
+    }
+    
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
