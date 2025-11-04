@@ -3,50 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Demo - Codespaces</title>
+    <title>Newsletter + Hero + Cards</title>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a Web Demo</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#about">Acerca de</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section id="home">
-            <h2>Página Principal</h2>
-            <p>Esta es una página de demostración para pruebas visuales en GitHub Codespaces.</p>
-            <button id="demoButton">Click Me!</button>
-            <div id="output"></div>
-        </section>
-        
-        <section id="about">
-            <h2>Acerca de este proyecto</h2>
-            <p>Proyecto de demostración con HTML, CSS y JavaScript separados.</p>
-        </section>
-        
-        <section id="contact">
-            <h2>Contacto</h2>
-            <p>Formulario de contacto de ejemplo.</p>
-            <form id="contactForm">
-                <input type="text" placeholder="Nombre" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Mensaje" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-    </main>
-    
-    <footer>
-        <p>&copy; 2025 Web Demo - GitHub Codespaces</p>
-    </footer>
-    
-    <script src="script.js"></script>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-inner">
+            <h1 class="hero-title">De la frustración de gastar sin resultados,</h1>
+            <h1 class="hero-title">a ver con claridad qué mueve tus ventas.</h1>
+            <p class="hero-subtitle">
+                Con datos, copywriting y optimización web, cada ajuste deja de ser una apuesta y se transforma en crecimiento real con tu presupuesto actual.
+            </p>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="left-section">
+                <div class="envelope-container">
+                    <div class="envelope">
+                        <div class="egg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-section">
+                <h1 class="headline">
+                    Freshly served, pure influencer marketing goodness. Zero snooze.
+                </h1>
+
+                <form>
+                    <div class="form-group">
+                        <label class="form-label">Your Email</label>
+                        <div class="input-wrapper">
+                            <input 
+                                type="email" 
+                                class="email-input" 
+                                placeholder="tu@email.com"
+                                required
+                            >
+                            <button type="submit" class="subscribe-btn">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+
+                    <p class="terms-text">
+                        By subscribing to the newsletter you agree to the 
+                        <a href="#">Cookie Policy</a> and 
+                        <a href="#">Privacy Policy</a>.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARDS SECTION -->
+    <section class="cards-section">
+        <div class="cards-container">
+            <div class="card">
+                <span class="card-number">001</span>
+                <h3 class="card-title">Rounded Timeline</h3>
+                <p class="card-description">This advanced timeline features a powerful blend of modern design and intuitive functionality.</p>
+                <div class="card-img"></div>
+            </div>
+
+            <div class="card">
+                <span class="card-number">002</span>
+                <h3 class="card-title">Smooth Transition</h3>
+                <p class="card-description">Utilizing a new approach, I built a hero with smooth video transitions from one clip to the page.</p>
+                <div class="card-img"></div>
+            </div>
+
+            <div class="card">
+                <span class="card-number">003</span>
+                <h3 class="card-title">Parallax Animations</h3>
+                <p class="card-description">Creation of parallax animations that move quickly along a path, giving users a sense of dynamism.</p>
+                <div class="card-img"></div>
+            </div>
+
+            <div class="card">
+                <span class="card-number">004</span>
+                <h3 class="card-title">Mouse Interactions</h3>
+                <p class="card-description">I've done a lot of various work in Adobe Illustrator including logo branding and working on the content on our platform.</p>
+                <div class="card-img"></div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
